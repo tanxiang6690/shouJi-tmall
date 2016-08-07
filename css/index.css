@@ -1,0 +1,1487 @@
+@charset "UTF-8";
+h1, h2, h3, h4, h5, h6, dl, dt, dd, p, ul, li, body {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  font-family: Arial,"微软雅黑"; }
+
+img {
+  padding: 0;
+  margin: 0;
+  border: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-size: 12px;
+  position: relative; }
+
+@media screen and (max-width: 414px) {
+  html {
+    font-size: 38.33333px; } }
+
+@media screen and (max-width: 412px) {
+  html {
+    font-size: 38.14815px; } }
+
+@media screen and (max-width: 384px) {
+  html {
+    font-size: 35.55556px; } }
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 34.72222px; } }
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 33.33333px; } }
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 29.62963px; } }
+
+.header {
+  width: 100%;
+  height: 0.69rem;
+  background: url("../images/20160729_182753_01.jpg") center center no-repeat;
+  background-size: 100%;
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0; }
+
+.header-nav {
+  width: 100%;
+  height: 1.4rem;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0.69rem;
+  z-index: 1000; }
+  .header-nav .right {
+    width: 1.2rem;
+    height: 1.13rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1.8rem; }
+    .header-nav .right span {
+      background: url("../images/20160729_182746_05.png") center top no-repeat;
+      background-size: 100%; }
+  .header-nav .search {
+    width: 7.2rem;
+    height: 1.07rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
+    .header-nav .search .search-text {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      outline: none;
+      border: none;
+      border-radius: 0.15rem;
+      text-indent: 1rem; }
+    .header-nav .search .search-icon {
+      width: 0.46rem;
+      height: 0.46rem;
+      background: url("../images/20160729_182653_03.png") no-repeat center center;
+      background-size: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 0.5rem; }
+  .header-nav .left {
+    width: 1.2rem;
+    height: 1.13rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1.8rem; }
+    .header-nav .left span {
+      background: url("../images/20160729_182746_03.png") center top no-repeat;
+      background-size: 100%; }
+  .header-nav .left span, .header-nav .right span {
+    display: block;
+    width: 0.57rem;
+    height: 0.57rem;
+    float: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto; }
+
+.footer-nav {
+  width: 100%;
+  height: 1.44rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: #fff; }
+  .footer-nav ul {
+    width: 100%;
+    height: 100%; }
+    .footer-nav ul li {
+      width: 20%;
+      height: 100%;
+      float: left;
+      position: relative; }
+      .footer-nav ul li:nth-child(1) i {
+        background: url("../images/footer1.jpg") no-repeat center center;
+        background-size: 100%; }
+      .footer-nav ul li:nth-child(2) i {
+        background: url("../images/footer2.jpg") no-repeat center center;
+        background-size: 100%; }
+      .footer-nav ul li:nth-child(3) i {
+        background: url("../images/footer3.jpg") no-repeat center center;
+        background-size: 100%; }
+      .footer-nav ul li:nth-child(4) i {
+        background: url("../images/footer4.jpg") no-repeat center center;
+        background-size: 100%; }
+      .footer-nav ul li:nth-child(5) i {
+        background: url("../images/footer5.jpg") no-repeat center center;
+        background-size: 100%; }
+      .footer-nav ul li a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0; }
+        .footer-nav ul li a i {
+          display: block;
+          width: 0.62rem;
+          height: 0.62rem;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          top: 0.12rem;
+          float: left; }
+        .footer-nav ul li a span {
+          display: block;
+          width: 100%;
+          height: 0.5rem;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          bottom: 0.1rem;
+          text-align: center;
+          color: black; }
+
+.content {
+  width: 100%;
+  overflow-y: auto;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0.69rem; }
+  .content .banner {
+    width: 100%;
+    height: 5.21rem;
+    float: left;
+    position: relative;
+    overflow: hidden; }
+    .content .banner .inner {
+      height: 100%;
+      width: 100%;
+      cursor: pointer; }
+      .content .banner .inner li {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: none;
+        transition: all 0.6s ease; }
+        .content .banner .inner li:nth-child(1) {
+          background: url("../images/banner1.png") center center no-repeat;
+          background-size: 100%; }
+        .content .banner .inner li:nth-child(2) {
+          background: url("../images/banner2.png") center center no-repeat;
+          background-size: 100%; }
+        .content .banner .inner li:nth-child(3) {
+          background: url("../images/banner3.png") center center no-repeat;
+          background-size: 100%; }
+        .content .banner .inner li:nth-child(4) {
+          background: url("../images/banner4.png") center center no-repeat;
+          background-size: 100%; }
+        .content .banner .inner li:nth-child(5) {
+          background: url("../images/banner5.png") center center no-repeat;
+          background-size: 100%; }
+        .content .banner .inner li:nth-child(6) {
+          background: url("../images/banner6.png") center center no-repeat;
+          background-size: 100%; }
+        .content .banner .inner li:nth-child(7) {
+          background: url("../images/banner7.png") center center no-repeat;
+          background-size: 100%; }
+        .content .banner .inner li:nth-child(8) {
+          background: url("../images/banner8.png") center center no-repeat;
+          background-size: 100%; }
+      .content .banner .inner .active {
+        display: block;
+        transform: translateX(0); }
+      .content .banner .inner .left {
+        display: block;
+        transform: translateX(-100%); }
+      .content .banner .inner .right {
+        display: block;
+        transform: translateX(100%); }
+    .content .banner .page {
+      width: 2.4rem;
+      height: 0.2rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 0.2rem;
+      cursor: pointer; }
+      .content .banner .page li {
+        height: 0.2rem;
+        width: 0.2rem;
+        border-radius: 50%;
+        background: #230009;
+        float: left;
+        margin: 0 0.05rem; }
+      .content .banner .page li.active {
+        background: #fff; }
+    .content .banner span {
+      display: block; }
+  .content .banner-nav {
+    width: 100%;
+    height: 4.66rem;
+    float: left;
+    box-sizing: border-box;
+    overflow: hidden; }
+    .content .banner-nav ul {
+      width: 100%;
+      height: 100%; }
+      .content .banner-nav ul li {
+        width: 20%;
+        height: 50%;
+        float: left; }
+        .content .banner-nav ul li:nth-child(1) a i {
+          background: url("../images/banner-nav1.jpg") center center;
+          background-size: 100%; }
+        .content .banner-nav ul li:nth-child(2) a i {
+          background: url("../images/banner-nav2.jpg") center center;
+          background-size: 100%; }
+        .content .banner-nav ul li:nth-child(3) a i {
+          background: url("../images/banner-nav3.jpg") center center;
+          background-size: 100%; }
+        .content .banner-nav ul li:nth-child(4) a i {
+          background: url("../images/banner-nav4.jpg") center center;
+          background-size: 100%; }
+        .content .banner-nav ul li:nth-child(5) a i {
+          background: url("../images/banner-nav5.jpg") center center;
+          background-size: 100%; }
+        .content .banner-nav ul li:nth-child(6) a i {
+          background: url("../images/banner-nav6.jpg") center center;
+          background-size: 100%; }
+        .content .banner-nav ul li:nth-child(7) a i {
+          background: url("../images/banner-nav7.jpg") center center;
+          background-size: 100%; }
+        .content .banner-nav ul li:nth-child(8) a i {
+          background: url("../images/banner-nav8.jpg") center center;
+          background-size: 100%; }
+        .content .banner-nav ul li:nth-child(9) a i {
+          background: url("../images/banner-nav9.jpg") center center;
+          background-size: 100%; }
+        .content .banner-nav ul li:nth-child(10) a i {
+          background: url("../images/banner-nav10.jpg") center center;
+          background-size: 100%; }
+        .content .banner-nav ul li a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: relative; }
+          .content .banner-nav ul li a i {
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto; }
+          .content .banner-nav ul li a span {
+            display: block;
+            color: #000;
+            text-align: center;
+            line-height: 3rem; }
+  .content .banner-bottom {
+    width: 100%;
+    height: 1.5rem;
+    float: left;
+    overflow: hidden; }
+    .content .banner-bottom .banner-bottom-left {
+      width: 1.76rem;
+      height: 1.5rem;
+      float: left;
+      position: relative; }
+      .content .banner-bottom .banner-bottom-left i {
+        display: block;
+        width: 1.76rem;
+        height: 1rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: url("../images/logo.jpg") center center no-repeat;
+        background-size: 100%;
+        border-right: 3px solid #eee; }
+    .content .banner-bottom .banner-bottom-right {
+      width: 8.5rem;
+      height: 1.5rem;
+      float: right;
+      overflow: hidden; }
+      .content .banner-bottom .banner-bottom-right span {
+        display: block; }
+      .content .banner-bottom .banner-bottom-right ul {
+        width: 100%;
+        height: 100%;
+        position: relative; }
+        .content .banner-bottom .banner-bottom-right ul i {
+          width: 0.51rem;
+          height: 0.45rem;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          left: 0;
+          background: url("../images/laba.webp") center center no-repeat;
+          background-size: 100%; }
+        .content .banner-bottom .banner-bottom-right ul li {
+          font-size: 20px;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0.7rem;
+          bottom: 0;
+          display: none;
+          transition: all 0.6s ease; }
+          .content .banner-bottom .banner-bottom-right ul li a {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 0.14rem;
+            color: #000211;
+            line-height: 0.75rem; }
+            .content .banner-bottom .banner-bottom-right ul li a .top {
+              width: 100%;
+              height: 50%;
+              float: left; }
+            .content .banner-bottom .banner-bottom-right ul li a .bottom {
+              width: 100%;
+              height: 50%;
+              float: left; }
+              .content .banner-bottom .banner-bottom-right ul li a .bottom p {
+                line-height: 0.75rem;
+                float: left;
+                padding-right: 0.15rem;
+                color: red; }
+              .content .banner-bottom .banner-bottom-right ul li a .bottom p:nth-child(1) {
+                padding: 0rem 0.15rem;
+                display: block;
+                background: red;
+                border-radius: 0.02rem;
+                color: #fff; }
+        .content .banner-bottom .banner-bottom-right ul li.active {
+          display: block;
+          transform: translateY(0); }
+        .content .banner-bottom .banner-bottom-right ul li.top {
+          display: block;
+          transform: translateY(-100%); }
+        .content .banner-bottom .banner-bottom-right ul li.bottom {
+          display: block;
+          transform: translateY(100%); }
+  .content .detail-content {
+    width: 100%;
+    background: #eee; }
+    .content .detail-content .heng-tu1 {
+      width: 100%;
+      height: 2.68rem;
+      float: left;
+      background: url("../images/20160730_175706_02.jpg") no-repeat center center;
+      background-size: 100%; }
+    .content .detail-content .heng-tu2 {
+      width: 100%;
+      height: 2.69rem;
+      float: left;
+      background: url("../images/20160730_175706_03.jpg") center center no-repeat;
+      background-size: 100%; }
+    .content .detail-content .zhi-bo {
+      width: 100%;
+      height: 3.07rem;
+      float: left;
+      background: red;
+      margin-top: 0.12rem; }
+      .content .detail-content .zhi-bo ul {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden; }
+        .content .detail-content .zhi-bo ul li {
+          width: 50%;
+          height: 100%;
+          float: left; }
+          .content .detail-content .zhi-bo ul li:nth-child(1) {
+            background: url("../images/zhibo-1.jpg") center center no-repeat;
+            background-size: 100%; }
+          .content .detail-content .zhi-bo ul li:nth-child(2) {
+            background: url("../images/zhibo-2.jpg") center center no-repeat;
+            background-size: 100%; }
+          .content .detail-content .zhi-bo ul li:nth-child(3) {
+            background: url("../images/zhibo-3.jpg") center center no-repeat;
+            background-size: 100%; }
+      .content .detail-content .zhi-bo a {
+        width: 100%;
+        height: 100%; }
+    .content .detail-content .floor {
+      width: 100%;
+      background: #eee;
+      overflow: hidden; }
+      .content .detail-content .floor .biQiang {
+        width: 100%;
+        height: 5.28rem;
+        float: left; }
+        .content .detail-content .floor .biQiang .title {
+          width: 100%;
+          height: 1rem;
+          float: left;
+          background: #eee;
+          position: relative; }
+          .content .detail-content .floor .biQiang .title p {
+            width: 1.5rem;
+            height: 0.5rem;
+            line-height: 0.5rem;
+            text-align: right;
+            color: #ff2e2e;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto; }
+            .content .detail-content .floor .biQiang .title p i {
+              width: 0.5rem;
+              height: 0.5rem;
+              float: left;
+              background: url("../images/20160806_114035_03.jpg") center center no-repeat;
+              background-size: 100%; }
+          .content .detail-content .floor .biQiang .title span {
+            display: block;
+            width: 0.9rem;
+            height: 0.02rem;
+            background: #f6b7b7;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto; }
+          .content .detail-content .floor .biQiang .title .left {
+            left: 3.5rem; }
+          .content .detail-content .floor .biQiang .title .right {
+            right: 3.5rem; }
+        .content .detail-content .floor .biQiang li {
+          width: 25%;
+          height: 4.28rem;
+          background: rebeccapurple;
+          float: left;
+          border-right: 0.02rem solid #eee;
+          box-sizing: border-box; }
+          .content .detail-content .floor .biQiang li:nth-of-type(1) {
+            background: url("../images/biqiang1.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .biQiang li:nth-of-type(2) {
+            background: url("../images/biqiang2.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .biQiang li:nth-of-type(3) {
+            background: url("../images/biqiang3.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .biQiang li:nth-of-type(4) {
+            background: url("../images/biqiang4.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .biQiang li a {
+            display: block;
+            width: 100%;
+            height: 100%; }
+      .content .detail-content .floor .pinPaiZiXun {
+        width: 100%;
+        height: 6rem; }
+        .content .detail-content .floor .pinPaiZiXun .title {
+          width: 100%;
+          height: 1rem;
+          float: left;
+          background: #eee;
+          position: relative; }
+          .content .detail-content .floor .pinPaiZiXun .title p {
+            width: 2.3rem;
+            height: 0.5rem;
+            line-height: 0.5rem;
+            text-align: right;
+            color: #009f8a;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto; }
+            .content .detail-content .floor .pinPaiZiXun .title p i {
+              width: 0.5rem;
+              height: 0.5rem;
+              float: left;
+              background: url("../images/20160730_175706_07.jpg") center center no-repeat;
+              background-size: 100%; }
+          .content .detail-content .floor .pinPaiZiXun .title span {
+            display: block;
+            width: 0.9rem;
+            height: 0.03rem;
+            background: #009f8a;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto; }
+          .content .detail-content .floor .pinPaiZiXun .title .left {
+            left: 3rem; }
+          .content .detail-content .floor .pinPaiZiXun .title .right {
+            right: 3rem; }
+        .content .detail-content .floor .pinPaiZiXun li {
+          width: 33.33333%;
+          height: 5rem;
+          background: rebeccapurple;
+          float: left;
+          border-right: 0.02rem solid #eee;
+          box-sizing: border-box; }
+          .content .detail-content .floor .pinPaiZiXun li:nth-of-type(1) {
+            background: url("../images/pinPaiZiXuan1.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .pinPaiZiXun li:nth-of-type(2) {
+            background: url("../images/pinPaiZiXuan2.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .pinPaiZiXun li:nth-of-type(3) {
+            background: url("../images/pinPaiZiXuan3.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .pinPaiZiXun li a {
+            display: block;
+            width: 100%;
+            height: 100%; }
+      .content .detail-content .floor .lunbo-inner {
+        width: 100%;
+        height: 2.68rem;
+        float: left; }
+        .content .detail-content .floor .lunbo-inner li {
+          width: 100%;
+          height: 100%;
+          float: left; }
+          .content .detail-content .floor .lunbo-inner li:nth-of-type(1) {
+            background: url("../images/banner-row1.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .lunbo-inner li:nth-of-type(2) {
+            background: url("../images/banner-row2.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .lunbo-inner li a {
+            display: block;
+            width: 100%;
+            height: 100%; }
+      .content .detail-content .floor .bianJieShengHuo {
+        width: 100%;
+        height: 6rem; }
+        .content .detail-content .floor .bianJieShengHuo .title {
+          width: 100%;
+          height: 1rem;
+          float: left;
+          background: #eee;
+          position: relative; }
+          .content .detail-content .floor .bianJieShengHuo .title p {
+            width: 2.3rem;
+            height: 0.5rem;
+            line-height: 0.5rem;
+            text-align: right;
+            color: #43af00;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto; }
+            .content .detail-content .floor .bianJieShengHuo .title p i {
+              width: 0.5rem;
+              height: 0.5rem;
+              float: left;
+              background: url("../images/20160806_131252_05.jpg") center center no-repeat;
+              background-size: 100%; }
+          .content .detail-content .floor .bianJieShengHuo .title span {
+            display: block;
+            width: 0.9rem;
+            height: 0.01rem;
+            background: #43af00;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto; }
+          .content .detail-content .floor .bianJieShengHuo .title .left {
+            left: 3.2rem; }
+          .content .detail-content .floor .bianJieShengHuo .title .right {
+            right: 3.2rem; }
+        .content .detail-content .floor .bianJieShengHuo li:nth-of-type(1) {
+          width: 4.77rem;
+          height: 4.32rem;
+          border-right: 0.04rem solid #eee;
+          box-sizing: border-box;
+          float: left; }
+        .content .detail-content .floor .bianJieShengHuo li:nth-of-type(2) {
+          width: 5.99rem;
+          height: 2.1rem;
+          border-bottom: 0.06rem solid #eee;
+          box-sizing: border-box;
+          float: left; }
+        .content .detail-content .floor .bianJieShengHuo li:nth-of-type(3) {
+          width: 5.92rem;
+          height: 2.14rem;
+          box-sizing: border-box;
+          float: left; }
+        .content .detail-content .floor .bianJieShengHuo li {
+          float: left; }
+          .content .detail-content .floor .bianJieShengHuo li:nth-of-type(1) {
+            background: url("../images/bianJieShengHuo1.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .bianJieShengHuo li:nth-of-type(2) {
+            background: url("../images/bianJieShengHuo2.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .bianJieShengHuo li:nth-of-type(3) {
+            background: url("../images/bianJieShengHuo3.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .bianJieShengHuo li a {
+            display: block;
+            width: 100%;
+            height: 100%; }
+      .content .detail-content .floor .guoJihaiGou {
+        width: 100%;
+        height: 6rem; }
+        .content .detail-content .floor .guoJihaiGou .title {
+          width: 100%;
+          height: 1rem;
+          float: left;
+          background: #eee;
+          position: relative; }
+          .content .detail-content .floor .guoJihaiGou .title p {
+            width: 2.3rem;
+            height: 0.5rem;
+            line-height: 0.5rem;
+            text-align: right;
+            color: #8828dd;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto; }
+            .content .detail-content .floor .guoJihaiGou .title p i {
+              width: 0.5rem;
+              height: 0.5rem;
+              float: left;
+              background: url("../images/20160806_154340_11.jpg") center center no-repeat;
+              background-size: 100%; }
+          .content .detail-content .floor .guoJihaiGou .title span {
+            display: block;
+            width: 0.9rem;
+            height: 0.02rem;
+            background: #cab9d9;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto; }
+          .content .detail-content .floor .guoJihaiGou .title .left {
+            left: 3rem; }
+          .content .detail-content .floor .guoJihaiGou .title .right {
+            right: 3rem; }
+        .content .detail-content .floor .guoJihaiGou li {
+          width: 33.33333%;
+          height: 5rem;
+          background: rebeccapurple;
+          float: left;
+          border-right: 0.02rem solid #eee;
+          box-sizing: border-box; }
+          .content .detail-content .floor .guoJihaiGou li:nth-of-type(1) {
+            background: url("../images/guoJihaiGou1.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .guoJihaiGou li:nth-of-type(2) {
+            background: url("../images/guoJihaiGou2.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .guoJihaiGou li:nth-of-type(3) {
+            background: url("../images/guoJihaiGou3.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .guoJihaiGou li a {
+            display: block;
+            width: 100%;
+            height: 100%; }
+      .content .detail-content .floor .jingXuanShiChang {
+        width: 100%;
+        height: 7.91rem; }
+        .content .detail-content .floor .jingXuanShiChang .title {
+          width: 100%;
+          height: 1rem;
+          float: left;
+          background: #eee;
+          position: relative; }
+          .content .detail-content .floor .jingXuanShiChang .title p {
+            width: 2.3rem;
+            height: 1rem;
+            line-height: 1rem;
+            text-align: right;
+            color: #e24aa5;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto; }
+            .content .detail-content .floor .jingXuanShiChang .title p i {
+              width: 0.66rem;
+              height: 0.5rem;
+              margin-top: 0.25rem;
+              float: left;
+              background: url("../images/20160806_154340_22.jpg") center center no-repeat;
+              background-size: 100%; }
+          .content .detail-content .floor .jingXuanShiChang .title span {
+            display: block;
+            width: 0.9rem;
+            height: 0.03rem;
+            background: #e24aa5;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto; }
+          .content .detail-content .floor .jingXuanShiChang .title .left {
+            left: 3rem; }
+          .content .detail-content .floor .jingXuanShiChang .title .right {
+            right: 3rem; }
+        .content .detail-content .floor .jingXuanShiChang li {
+          width: 25%;
+          height: 3.74rem;
+          background: rebeccapurple;
+          float: left;
+          border-right: 0.02rem solid #eee;
+          box-sizing: border-box; }
+          .content .detail-content .floor .jingXuanShiChang li:nth-of-type(1) {
+            background: url("../images/jingXuanShiChang1.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .jingXuanShiChang li:nth-of-type(2) {
+            background: url("../images/jingXuanShiChang2.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .jingXuanShiChang li:nth-of-type(3) {
+            background: url("../images/jingXuanShiChang3.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .jingXuanShiChang li:nth-of-type(4) {
+            background: url("../images/jingXuanShiChang4.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .jingXuanShiChang li:nth-of-type(5) {
+            background: url("../images/jingXuanShiChang5.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .jingXuanShiChang li:nth-of-type(6) {
+            background: url("../images/jingXuanShiChang6.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .jingXuanShiChang li a {
+            display: block;
+            width: 100%;
+            height: 100%; }
+        .content .detail-content .floor .jingXuanShiChang li:nth-of-type(5), .content .detail-content .floor .jingXuanShiChang li:nth-of-type(6) {
+          width: 50%;
+          height: 3.15rem;
+          box-sizing: border-box;
+          border-top: 0.02rem solid #eee;
+          float: left; }
+      .content .detail-content .floor .aiShengHuo {
+        width: 100%;
+        height: 5.05rem;
+        float: left; }
+        .content .detail-content .floor .aiShengHuo .title {
+          width: 100%;
+          height: 1rem;
+          float: left;
+          background: #eee;
+          position: relative; }
+          .content .detail-content .floor .aiShengHuo .title p {
+            width: 1.9rem;
+            height: 1rem;
+            line-height: 1rem;
+            text-align: right;
+            color: #17b7ff;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto; }
+            .content .detail-content .floor .aiShengHuo .title p i {
+              margin-top: 0.25rem;
+              width: 0.6rem;
+              height: 0.5rem;
+              float: left;
+              background: url("../images/20160806_165726_17.jpg") center center no-repeat;
+              background-size: 100%; }
+          .content .detail-content .floor .aiShengHuo .title span {
+            display: block;
+            width: 0.9rem;
+            height: 0.03rem;
+            background: #17b7ff;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto; }
+          .content .detail-content .floor .aiShengHuo .title .left {
+            left: 3.2rem; }
+          .content .detail-content .floor .aiShengHuo .title .right {
+            right: 3.2rem; }
+        .content .detail-content .floor .aiShengHuo li {
+          width: 25%;
+          height: 4.05rem;
+          background: rebeccapurple;
+          float: left;
+          border-right: 0.02rem solid #eee;
+          box-sizing: border-box; }
+          .content .detail-content .floor .aiShengHuo li:nth-of-type(1) {
+            background: url("../images/aiShengHuo1.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .aiShengHuo li:nth-of-type(2) {
+            background: url("../images/aiShengHuo2.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .aiShengHuo li:nth-of-type(3) {
+            background: url("../images/aiShengHuo3.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .aiShengHuo li:nth-of-type(4) {
+            background: url("../images/aiShengHuo4.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .aiShengHuo li a {
+            display: block;
+            width: 100%;
+            height: 100%; }
+      .content .detail-content .floor .chaoLiuKuWan {
+        width: 100%;
+        height: 5.37rem; }
+        .content .detail-content .floor .chaoLiuKuWan .title {
+          width: 100%;
+          height: 1rem;
+          float: left;
+          background: #eee;
+          position: relative; }
+          .content .detail-content .floor .chaoLiuKuWan .title p {
+            width: 2.3rem;
+            height: 1rem;
+            line-height: 1rem;
+            text-align: right;
+            color: #4a84e2;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto; }
+            .content .detail-content .floor .chaoLiuKuWan .title p i {
+              margin-top: 0.25rem;
+              width: 0.5rem;
+              height: 0.5rem;
+              float: left;
+              background: url("../images/20160806_182536_03.jpg") center center no-repeat;
+              background-size: 100%; }
+          .content .detail-content .floor .chaoLiuKuWan .title span {
+            display: block;
+            width: 0.9rem;
+            height: 0.03rem;
+            background: #4a84e2;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto; }
+          .content .detail-content .floor .chaoLiuKuWan .title .left {
+            left: 3rem; }
+          .content .detail-content .floor .chaoLiuKuWan .title .right {
+            right: 3rem; }
+        .content .detail-content .floor .chaoLiuKuWan li {
+          width: 33.33333%;
+          height: 4.37rem;
+          background: rebeccapurple;
+          float: left;
+          border-right: 0.02rem solid #eee;
+          box-sizing: border-box; }
+          .content .detail-content .floor .chaoLiuKuWan li:nth-of-type(1) {
+            background: url("../images/chaoLiuKuWan1.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .chaoLiuKuWan li:nth-of-type(2) {
+            background: url("../images/chaoLiuKuWan2.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .chaoLiuKuWan li:nth-of-type(3) {
+            background: url("../images/chaoLiuKuWan3.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .chaoLiuKuWan li a {
+            display: block;
+            width: 100%;
+            height: 100%; }
+      .content .detail-content .floor .pinPaiTeMai {
+        width: 100%;
+        height: 3.73rem;
+        float: left; }
+        .content .detail-content .floor .pinPaiTeMai .title {
+          width: 100%;
+          height: 1rem;
+          float: left;
+          background: #eee;
+          position: relative; }
+          .content .detail-content .floor .pinPaiTeMai .title p {
+            width: 2.3rem;
+            height: 1rem;
+            line-height: 1rem;
+            text-align: right;
+            color: #ff8000;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto; }
+            .content .detail-content .floor .pinPaiTeMai .title p i {
+              margin-top: 0.25rem;
+              width: 0.5rem;
+              height: 0.5rem;
+              float: left;
+              background: url("../images/20160806_182536_15.jpg") center center no-repeat;
+              background-size: 100%; }
+          .content .detail-content .floor .pinPaiTeMai .title span {
+            display: block;
+            width: 0.9rem;
+            height: 0.03rem;
+            background: #ff8000;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto; }
+          .content .detail-content .floor .pinPaiTeMai .title .left {
+            left: 3rem; }
+          .content .detail-content .floor .pinPaiTeMai .title .right {
+            right: 3rem; }
+        .content .detail-content .floor .pinPaiTeMai li {
+          width: 50%;
+          height: 3.17rem;
+          float: left;
+          border-right: 0.04rem solid #eee;
+          box-sizing: border-box; }
+          .content .detail-content .floor .pinPaiTeMai li:nth-of-type(1) {
+            background: url("../images/pinPaiTeMai1.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .pinPaiTeMai li:nth-of-type(2) {
+            background: url("../images/pinPaiTeMai2.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .pinPaiTeMai li a {
+            display: block;
+            width: 100%;
+            height: 100%; }
+      .content .detail-content .floor .lunbo1-inner {
+        width: 100%;
+        height: 2.68rem;
+        float: left;
+        margin-top: 0.5rem;
+        position: relative; }
+        .content .detail-content .floor .lunbo1-inner li {
+          width: 100%;
+          height: 100%;
+          float: left;
+          position: absolute;
+          left: 0;
+          top: 0; }
+          .content .detail-content .floor .lunbo1-inner li:nth-of-type(1) {
+            background: url("../images/lunbo1-inner1.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .lunbo1-inner li:nth-of-type(2) {
+            background: url("../images/lunbo1-inner2.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .lunbo1-inner li:nth-of-type(3) {
+            background: url("../images/lunbo1-inner3.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .lunbo1-inner li a {
+            display: block;
+            width: 100%;
+            height: 100%; }
+      .content .detail-content .floor .pinPaiTeMai {
+        width: 100%;
+        height: 3.73rem;
+        float: left; }
+        .content .detail-content .floor .pinPaiTeMai .title {
+          width: 100%;
+          height: 1rem;
+          float: left;
+          background: #eee;
+          position: relative; }
+          .content .detail-content .floor .pinPaiTeMai .title p {
+            width: 2.3rem;
+            height: 1rem;
+            line-height: 1rem;
+            text-align: right;
+            color: #ff8000;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto; }
+            .content .detail-content .floor .pinPaiTeMai .title p i {
+              margin-top: 0.25rem;
+              width: 0.5rem;
+              height: 0.5rem;
+              float: left;
+              background: url("../images/20160806_182536_15.jpg") center center no-repeat;
+              background-size: 100%; }
+          .content .detail-content .floor .pinPaiTeMai .title span {
+            display: block;
+            width: 0.9rem;
+            height: 0.03rem;
+            background: #ff8000;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto; }
+          .content .detail-content .floor .pinPaiTeMai .title .left {
+            left: 3rem; }
+          .content .detail-content .floor .pinPaiTeMai .title .right {
+            right: 3rem; }
+        .content .detail-content .floor .pinPaiTeMai li {
+          width: 50%;
+          height: 3.17rem;
+          float: left;
+          border-right: 0.04rem solid #eee;
+          box-sizing: border-box; }
+          .content .detail-content .floor .pinPaiTeMai li:nth-of-type(1) {
+            background: url("../images/pinPaiTeMai1.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .pinPaiTeMai li:nth-of-type(2) {
+            background: url("../images/pinPaiTeMai2.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .pinPaiTeMai li a {
+            display: block;
+            width: 100%;
+            height: 100%; }
+      .content .detail-content .floor .reMenHangYe {
+        width: 100%;
+        height: 12.15rem;
+        float: left; }
+        .content .detail-content .floor .reMenHangYe .title {
+          width: 100%;
+          height: 1rem;
+          float: left;
+          background: #eee;
+          position: relative; }
+          .content .detail-content .floor .reMenHangYe .title p {
+            width: 2.3rem;
+            height: 1rem;
+            line-height: 1rem;
+            text-align: right;
+            color: #5e4ae2;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto; }
+            .content .detail-content .floor .reMenHangYe .title p i {
+              margin-top: 0.25rem;
+              width: 0.5rem;
+              height: 0.5rem;
+              float: left;
+              background: url("../images/20160807_125110_05.jpg") center center no-repeat;
+              background-size: 100%; }
+          .content .detail-content .floor .reMenHangYe .title span {
+            display: block;
+            width: 0.9rem;
+            height: 0.03rem;
+            background: #5e4ae2;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto; }
+          .content .detail-content .floor .reMenHangYe .title .left {
+            left: 3rem; }
+          .content .detail-content .floor .reMenHangYe .title .right {
+            right: 3rem; }
+        .content .detail-content .floor .reMenHangYe li {
+          width: 25%;
+          height: 4.05rem;
+          float: left;
+          border-right: 0.02rem solid #eee;
+          border-bottom: 0.02rem solid #eee;
+          box-sizing: border-box; }
+          .content .detail-content .floor .reMenHangYe li:nth-of-type(3) {
+            background: url("../images/reMenHangYe3.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .reMenHangYe li:nth-of-type(4) {
+            background: url("../images/reMenHangYe4.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .reMenHangYe li:nth-of-type(5) {
+            background: url("../images/reMenHangYe5.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .reMenHangYe li:nth-of-type(6) {
+            background: url("../images/reMenHangYe6.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .reMenHangYe li:nth-of-type(7) {
+            background: url("../images/reMenHangYe7.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .reMenHangYe li:nth-of-type(8) {
+            background: url("../images/reMenHangYe8.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .reMenHangYe li:nth-of-type(9) {
+            background: url("../images/reMenHangYe9.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .reMenHangYe li:nth-of-type(10) {
+            background: url("../images/reMenHangYe10.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .reMenHangYe li a {
+            display: block;
+            width: 100%;
+            height: 100%; }
+        .content .detail-content .floor .reMenHangYe li:nth-of-type(1) {
+          width: 50%;
+          height: 3rem;
+          float: left;
+          background: url("../images/reMenHangYe1.jpg") no-repeat center center;
+          background-size: 100%; }
+        .content .detail-content .floor .reMenHangYe li:nth-of-type(2) {
+          width: 50%;
+          height: 3rem;
+          float: left;
+          background: url("../images/reMenHangYe2.jpg") no-repeat center center;
+          background-size: 100%; }
+      .content .detail-content .floor .lunbo2-inner {
+        width: 100%;
+        height: 2.68rem;
+        float: left;
+        position: relative; }
+        .content .detail-content .floor .lunbo2-inner li {
+          width: 100%;
+          height: 100%;
+          float: left;
+          position: absolute;
+          left: 0;
+          top: 0; }
+          .content .detail-content .floor .lunbo2-inner li:nth-of-type(1) {
+            background: url("../images/lunbo2-inner1.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .lunbo2-inner li:nth-of-type(2) {
+            background: url("../images/lunbo2-inner2.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .lunbo2-inner li a {
+            display: block;
+            width: 100%;
+            height: 100%; }
+      .content .detail-content .floor .pinPaiQiJian {
+        width: 100%;
+        height: 10.37rem;
+        float: left; }
+        .content .detail-content .floor .pinPaiQiJian .title {
+          width: 100%;
+          height: 1rem;
+          float: left;
+          background: #eee;
+          position: relative; }
+          .content .detail-content .floor .pinPaiQiJian .title p {
+            width: 2.3rem;
+            height: 1rem;
+            line-height: 1rem;
+            text-align: right;
+            color: #2f2f2f;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto; }
+            .content .detail-content .floor .pinPaiQiJian .title p i {
+              margin-top: 0.25rem;
+              width: 0.5rem;
+              height: 0.5rem;
+              float: left;
+              background: url("../images/20160807_131654_05.jpg") center center no-repeat;
+              background-size: 100%; }
+          .content .detail-content .floor .pinPaiQiJian .title span {
+            display: block;
+            width: 0.9rem;
+            height: 0.03rem;
+            background: #2f2f2f;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto; }
+          .content .detail-content .floor .pinPaiQiJian .title .left {
+            left: 3rem; }
+          .content .detail-content .floor .pinPaiQiJian .title .right {
+            right: 3rem; }
+        .content .detail-content .floor .pinPaiQiJian li {
+          width: 50%;
+          height: 50%;
+          float: left;
+          border-right: 0.09rem solid #eee;
+          border-bottom: 0.1rem solid #eee;
+          box-sizing: border-box; }
+          .content .detail-content .floor .pinPaiQiJian li:nth-of-type(1) {
+            background: url("../images/pinPaiQiJian1.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .pinPaiQiJian li:nth-of-type(2) {
+            background: url("../images/pinPaiQiJian2.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .pinPaiQiJian li:nth-of-type(3) {
+            background: url("../images/pinPaiQiJian3.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .pinPaiQiJian li:nth-of-type(4) {
+            background: url("../images/pinPaiQiJian4.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .pinPaiQiJian li a {
+            display: block;
+            width: 100%;
+            height: 100%; }
+      .content .detail-content .floor .caiNiXiHuan {
+        height: auto;
+        width: 100%;
+        float: left;
+        margin-bottom: 1.5rem; }
+        .content .detail-content .floor .caiNiXiHuan .title {
+          width: 100%;
+          height: 1rem;
+          float: left;
+          background: #eee;
+          position: relative; }
+          .content .detail-content .floor .caiNiXiHuan .title p {
+            width: 2.3rem;
+            height: 1rem;
+            line-height: 1rem;
+            text-align: right;
+            color: #2f2f2f;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto; }
+            .content .detail-content .floor .caiNiXiHuan .title p i {
+              margin-top: 0.25rem;
+              width: 0.5rem;
+              height: 0.5rem;
+              float: left;
+              background: url("../images/20160806_114035_03.jpg") center center no-repeat;
+              background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan .title span {
+            display: block;
+            width: 0.9rem;
+            height: 0.03rem;
+            background: #2f2f2f;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto; }
+          .content .detail-content .floor .caiNiXiHuan .title .left {
+            left: 3rem; }
+          .content .detail-content .floor .caiNiXiHuan .title .right {
+            right: 3rem; }
+        .content .detail-content .floor .caiNiXiHuan li {
+          width: 50%;
+          height: 7.65rem;
+          float: left;
+          border-right: 0.02rem solid #eee;
+          border-bottom: 0.02rem solid #eee;
+          box-sizing: border-box; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(1) {
+            background: url("../images/caiNiXiHuan1.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(2) {
+            background: url("../images/caiNiXiHuan2.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(3) {
+            background: url("../images/caiNiXiHuan3.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(4) {
+            background: url("../images/caiNiXiHuan4.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(5) {
+            background: url("../images/caiNiXiHuan5.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(6) {
+            background: url("../images/caiNiXiHuan6.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(7) {
+            background: url("../images/caiNiXiHuan7.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(8) {
+            background: url("../images/caiNiXiHuan8.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(9) {
+            background: url("../images/caiNiXiHuan9.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(10) {
+            background: url("../images/caiNiXiHuan10.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(11) {
+            background: url("../images/caiNiXiHuan11.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(12) {
+            background: url("../images/caiNiXiHuan12.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(13) {
+            background: url("../images/caiNiXiHuan13.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(14) {
+            background: url("../images/caiNiXiHuan14.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(15) {
+            background: url("../images/caiNiXiHuan15.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(16) {
+            background: url("../images/caiNiXiHuan16.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(17) {
+            background: url("../images/caiNiXiHuan17.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(18) {
+            background: url("../images/caiNiXiHuan18.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(19) {
+            background: url("../images/caiNiXiHuan19.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(20) {
+            background: url("../images/caiNiXiHuan20.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(21) {
+            background: url("../images/caiNiXiHuan21.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(22) {
+            background: url("../images/caiNiXiHuan22.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(23) {
+            background: url("../images/caiNiXiHuan23.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(24) {
+            background: url("../images/caiNiXiHuan24.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(25) {
+            background: url("../images/caiNiXiHuan25.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(26) {
+            background: url("../images/caiNiXiHuan26.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(27) {
+            background: url("../images/caiNiXiHuan27.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(28) {
+            background: url("../images/caiNiXiHuan28.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(29) {
+            background: url("../images/caiNiXiHuan29.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(30) {
+            background: url("../images/caiNiXiHuan30.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(31) {
+            background: url("../images/caiNiXiHuan31.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(32) {
+            background: url("../images/caiNiXiHuan32.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(33) {
+            background: url("../images/caiNiXiHuan33.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(34) {
+            background: url("../images/caiNiXiHuan34.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(35) {
+            background: url("../images/caiNiXiHuan35.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(36) {
+            background: url("../images/caiNiXiHuan36.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(37) {
+            background: url("../images/caiNiXiHuan37.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(38) {
+            background: url("../images/caiNiXiHuan38.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(39) {
+            background: url("../images/caiNiXiHuan39.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(40) {
+            background: url("../images/caiNiXiHuan40.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(41) {
+            background: url("../images/caiNiXiHuan41.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(42) {
+            background: url("../images/caiNiXiHuan42.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(43) {
+            background: url("../images/caiNiXiHuan43.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(44) {
+            background: url("../images/caiNiXiHuan44.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(45) {
+            background: url("../images/caiNiXiHuan45.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(46) {
+            background: url("../images/caiNiXiHuan46.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(47) {
+            background: url("../images/caiNiXiHuan47.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(48) {
+            background: url("../images/caiNiXiHuan48.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(49) {
+            background: url("../images/caiNiXiHuan49.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(50) {
+            background: url("../images/caiNiXiHuan50.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(51) {
+            background: url("../images/caiNiXiHuan51.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li:nth-of-type(52) {
+            background: url("../images/caiNiXiHuan52.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .caiNiXiHuan li a {
+            display: block;
+            width: 100%;
+            height: 100%; }
+        .content .detail-content .floor .caiNiXiHuan li:last-child {
+          width: 100%;
+          height: 2rem;
+          float: left;
+          background: #eee;
+          position: relative; }
+          .content .detail-content .floor .caiNiXiHuan li:last-child i {
+            display: block;
+            width: 1.14rem;
+            height: 0.81rem;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background: url("../images/20160807_230215_06.jpg") no-repeat center center;
+            background-size: 100%; }

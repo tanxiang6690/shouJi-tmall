@@ -1,0 +1,1094 @@
+@import "public";
+@include userem(1080px);
+.header{
+  width: 100%;
+  height: 0.69rem;
+  background: url("../images/20160729_182753_01.jpg") center center no-repeat;
+  background-size: 100%;
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  right:0;
+  top:0;
+}
+.header-nav{
+  @include changfang(100%,1.4rem);
+  margin: 0 auto;
+  background: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0.69rem;
+  z-index: 1000;
+  .right{
+    @include changfang(1.2rem,1.13rem);
+    @include shangxia;
+    right:0.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1.8rem;
+    span{
+      background: url("../images/20160729_182746_05.png") center top no-repeat;
+      background-size: 100%;
+    }
+  }
+  .search{
+    @include changfang(7.2rem,1.07rem);
+    @include center;
+    .search-text{
+      @include changfang(100%,100%);
+      position: absolute;
+      left:0;
+      top: 0;
+      outline: none;
+      border: none;
+      border-radius: 0.15rem;
+      text-indent: 1rem;
+    }
+    .search-icon{
+      @include zhengfang(0.46rem)
+      background: url("../images/20160729_182653_03.png") no-repeat center center;
+      background-size: 100%;
+      @include shangxia;
+      left:0.5rem;
+    }
+  }
+  .left{
+    @include changfang(1.2rem,1.13rem);
+    @include shangxia;
+    left:0.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1.8rem;
+    span{
+      background: url("../images/20160729_182746_03.png") center top no-repeat;
+      background-size: 100%;
+    }
+  }
+  .left span,.right span{
+    display: block;
+    @include zhengfang(0.57rem);
+    float: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left:0;
+    margin: auto;
+  }
+}
+.footer-nav{
+  @include changfang(100%,1.44rem);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: #fff;
+  ul{
+    @include changfang(100%,100%);
+    li{
+      @include changfang(20%,100%);
+      float: left;
+      position: relative;
+      @for $i from 1 through 5{
+        &:nth-child(#{$i}) i{
+          background: url("../images/footer#{$i}.jpg") no-repeat center center;
+          background-size: 100%;
+        }
+      }
+      a{
+        @include changfang(100%,100%);
+        display: block;
+        position: absolute;
+        top:0;
+        left:0;
+        i{
+          display: block;
+          @include zhengfang(0.62rem);
+          @include zuoyou;
+          top:0.12rem;
+          float: left;
+        }
+        span{
+          display: block;
+          @include changfang(100%,0.5rem);
+          @include zuoyou;
+          bottom:0.1rem;
+          text-align: center;
+          color: black;
+        }
+      }
+    }
+  }
+}
+.content{
+  width: 100%;
+  overflow-y: auto;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0.69rem;
+  .banner{
+    @include changfang(100%,5.21rem);
+    float: left;
+    position: relative;
+    overflow: hidden;
+    .inner{
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+      li{
+        @include changfang(100%,100%);
+        position: absolute;
+        //left: 0;
+        //top: 0;
+        display: none;
+        transition:all 0.6s ease;
+        @for $i from 1 through 8{
+          &:nth-child(#{$i}){
+            background:url("../images/banner#{$i}.png") center center no-repeat;
+            background-size:100%;
+          }
+        }
+      }
+      .active{
+        display: block;
+        transform:translateX(0)
+      }
+      .left{
+        display: block;
+        transform: translateX(-100%);
+      }
+      .right{
+        display: block;
+        transform: translateX(100%);
+      }
+    }
+    .page{
+      @include changfang(2.4rem,0.2rem);
+      @include zuoyou;
+      bottom: 0.2rem;
+      cursor: pointer;
+      li{
+        @include yuan(0.2rem);
+        background: #230009;
+        float: left;
+        margin: 0 0.05rem;
+      }
+      li.active{
+        background: #fff;
+      }
+    }
+    span{
+      display: block;
+    }
+  }
+  .banner-nav{
+    @include changfang(100%,4.66rem);
+    float: left;
+    box-sizing: border-box;
+    overflow: hidden;
+    ul{
+      @include changfang(100%,100%);
+      li{
+        @include changfang(20%,50%);
+        float: left;
+        @for $i from 1 through 10{
+         &:nth-child(#{$i}) a i{
+            background: url("../images/banner-nav#{$i}.jpg") center center;
+           background-size: 100%;
+          }
+        }
+        a{
+          display: block;
+          @include changfang(100%,100%);
+          position: relative;
+          i{
+            display: block;
+            @include zhengfang(1rem);
+            @include zuoyou;
+          }
+          span{
+            display: block;
+            color: #000;
+            text-align: center;
+            line-height: 3rem;
+          }
+        }
+      }
+    }
+  }
+  .banner-bottom{
+    @include changfang(100%,1.5rem);
+    float: left;
+    overflow: hidden;
+    .banner-bottom-left{
+      @include changfang(1.76rem,1.5rem);
+      float: left;
+      position: relative;
+      i{
+        display: block;
+        @include changfang(1.76rem,1rem);
+        @include center;
+        background: url("../images/logo.jpg") center center no-repeat;
+        background-size: 100%;
+        border-right: 3px solid #eee;
+      }
+    }
+    .banner-bottom-right{
+      @include changfang(8.5rem,1.5rem);
+      float: right;
+      overflow: hidden;
+      //$list:#D13131,#796FE5,#6FE583,#E56FC1;
+      //@for $i from 1 through 4{
+      //  &:nth-child(#{$i}){
+      //    background: nth($list,$i);
+      //  }
+      //}
+      span{
+        display: block;
+      }
+      ul{
+        @include changfang(100%,100%);
+        position: relative;
+        i{
+          @include changfang(0.51rem,0.45rem);
+          @include shangxia;
+          left:0;
+          background: url("../images/laba.webp")center center no-repeat;
+          background-size: 100%;
+        }
+        li{
+          font-size: 20px;
+          @include changfang(100%,100%);
+          position: absolute;
+          left:0.7rem;
+          bottom:0;
+          display: none;
+          transition: all 0.6s ease;
+          a{
+            @include changfang(100%,100%);
+            position: absolute;
+            top: 0;
+            left:0;
+            font-size: 0.14rem;
+            color: #000211;
+            line-height: 0.75rem;
+            .top{
+              @include changfang(100%,50%);
+              float: left;
+            }
+            .bottom{
+              @include changfang(100%,50%);
+              float: left;
+              p{
+                line-height: 0.75rem;
+                float: left;
+                padding-right: 0.15rem;
+                color: red;
+              }
+              p:nth-child(1){
+                padding: 0rem 0.15rem;
+                display: block;
+                background: red;
+                border-radius: 0.02rem;
+                color: #fff;
+              }
+            }
+          }
+        }
+        li.active{
+          display: block;
+          transform:translateY(0);
+        }
+        li.top{
+          display: block;
+          transform:translateY(-100%);
+        }
+        li.bottom{
+          display: block;
+          transform:translateY(100%);
+        }
+      }
+    }
+  }
+  .detail-content{
+    width: 100%;
+    background: #eee;
+    .heng-tu1{
+      @include changfang(100%,2.68rem);
+      float: left;
+      background: url("../images/20160730_175706_02.jpg") no-repeat center center;
+      background-size: 100%;
+    }
+    .heng-tu2{
+      @include changfang(100%,2.69rem);
+      float: left;
+      background: url("../images/20160730_175706_03.jpg") center center no-repeat;
+      background-size: 100%;
+    }
+    .zhi-bo{
+      @include changfang(100%,3.07rem);
+      float: left;
+      background: red;
+      margin-top: 0.12rem;
+      ul{
+        @include changfang(100%,100%);
+        position: relative;
+        overflow: hidden;
+        li{
+          @include changfang(50%,100%);
+          float: left;
+          @for $i from 1 through 3{
+            &:nth-child(#{$i}){
+              background: url("../images/zhibo-#{$i}.jpg") center center no-repeat;
+              background-size: 100%;
+            }
+          }
+        }
+      }
+      a{
+      @include changfang(100%,100%);
+      }
+    }
+    .floor{
+      width: 100%;
+      background: #eee;
+      overflow: hidden;
+      .biQiang{
+        @include changfang(100%,5.28rem);
+        float: left;
+        .title{
+          @include changfang(100%,1rem);
+          float: left;
+          background: #eee;
+          position: relative;
+          p{
+            @include changfang(1.5rem,0.5rem);
+            line-height: 0.5rem;
+            text-align: right;
+            color: #ff2e2e;
+            @include center;
+            i{
+              @include zhengfang(0.5rem);
+              float: left;
+              background: url("../images/20160806_114035_03.jpg") center center no-repeat;
+              background-size: 100%;
+            }
+          }
+          span{
+            display: block;
+            @include changfang(0.9rem,0.02rem);
+            background: #f6b7b7;
+            @include shangxia;
+          }
+          .left{
+            left: 3.5rem;
+          }
+          .right{
+            right: 3.5rem;
+          }
+        }
+        li{
+          @include changfang(25%,4.28rem);
+          background: rebeccapurple;
+          float: left;
+          border-right: 0.02rem solid #eee;
+          box-sizing: border-box;
+          @for $i from 1 through 4{
+             &:nth-of-type(#{$i}){
+               background: url("../images/biqiang#{$i}.jpg") no-repeat center center;
+               background-size: 100%;
+             }
+          }
+          a{
+            display: block;
+            @include changfang(100%,100%);
+          }
+        }
+      }
+      .pinPaiZiXun{
+        @include changfang(100%,6rem);
+        .title{
+          @include changfang(100%,1rem);
+          float: left;
+          background: #eee;
+          position: relative;
+          p{
+            @include changfang(2.3rem,0.5rem);
+            line-height: 0.5rem;
+            text-align: right;
+            color: #009f8a;
+            @include center;
+            i{
+              @include zhengfang(0.5rem);
+              float: left;
+              background: url("../images/20160730_175706_07.jpg") center center no-repeat;
+              background-size: 100%;
+            }
+          }
+          span{
+            display: block;
+            @include changfang(0.9rem,0.03rem);
+            background: #009f8a;
+            @include shangxia;
+          }
+          .left{
+            left: 3rem;
+          }
+          .right{
+            right: 3rem;
+          }
+        }
+        li{
+          @include changfang(33.33333%,5rem);
+          background: rebeccapurple;
+          float: left;
+          border-right: 0.02rem solid #eee;
+          box-sizing: border-box;
+          @for $i from 1 through 3{
+            &:nth-of-type(#{$i}){
+              background: url("../images/pinPaiZiXuan#{$i}.jpg") no-repeat center center;
+              background-size: 100%;
+            }
+          }
+          a{
+            display: block;
+            @include changfang(100%,100%);
+          }
+        }
+      }
+      .lunbo-inner{
+        @include changfang(100%,2.68rem);
+        float: left;
+        //position: relative;
+        li{
+          @include changfang(100%,100%);
+          float: left;
+          @for $i from 1 through 2{
+            &:nth-of-type(#{$i}){
+              background: url("../images/banner-row#{$i}.jpg") no-repeat center center;
+              background-size: 100%;
+            }
+          }
+          a{
+            display: block;
+            @include changfang(100%,100%);
+          }
+        }
+      }
+      .bianJieShengHuo{
+        @include changfang(100%,6rem);
+        .title{
+          @include changfang(100%,1rem);
+          float: left;
+          background: #eee;
+          position: relative;
+          p{
+            @include changfang(2.3rem,0.5rem);
+            line-height: 0.5rem;
+            text-align: right;
+            color: #43af00;
+            @include center;
+            i{
+              @include zhengfang(0.5rem);
+              float: left;
+              background: url("../images/20160806_131252_05.jpg") center center no-repeat;
+              background-size: 100%;
+            }
+          }
+          span{
+            display: block;
+            @include changfang(0.9rem,0.01rem);
+            background: #43af00;
+            @include shangxia;
+          }
+          .left{
+            left: 3.2rem;
+          }
+          .right{
+            right: 3.2rem;
+          }
+        }
+        li:nth-of-type(1){
+          @include changfang(4.77rem,4.32rem);
+          border-right: 0.04rem solid #eee;
+          box-sizing: border-box;
+          float: left;
+        }
+        li:nth-of-type(2){
+          @include changfang(5.99rem,2.1rem);
+          border-bottom: 0.06rem solid #eee;
+          box-sizing: border-box;
+          float: left;
+        }
+        li:nth-of-type(3){
+          @include changfang(5.92rem,2.14rem);
+          box-sizing: border-box;
+          float: left;
+        }
+        li{
+          float: left;
+          @for $i from 1 through 3{
+            &:nth-of-type(#{$i}){
+              background: url("../images/bianJieShengHuo#{$i}.jpg") no-repeat center center;
+              background-size: 100%;
+            }
+          }
+          a{
+            display: block;
+            @include changfang(100%,100%);
+          }
+        }
+      }
+      .guoJihaiGou{
+        @include changfang(100%,6rem);
+        .title{
+          @include changfang(100%,1rem);
+          float: left;
+          background: #eee;
+          position: relative;
+          p{
+            @include changfang(2.3rem,0.5rem);
+            line-height: 0.5rem;
+            text-align: right;
+            color: #8828dd;
+            @include center;
+            i{
+              @include zhengfang(0.5rem);
+              float: left;
+              background: url("../images/20160806_154340_11.jpg") center center no-repeat;
+              background-size: 100%;
+            }
+          }
+          span{
+            display: block;
+            @include changfang(0.9rem,0.02rem);
+            background: #cab9d9;
+            @include shangxia;
+          }
+          .left{
+            left: 3rem;
+          }
+          .right{
+            right: 3rem;
+          }
+        }
+        li{
+          @include changfang(33.33333%,5rem);
+          background: rebeccapurple;
+          float: left;
+          border-right: 0.02rem solid #eee;
+          box-sizing: border-box;
+          @for $i from 1 through 3{
+            &:nth-of-type(#{$i}){
+              background: url("../images/guoJihaiGou#{$i}.jpg") no-repeat center center;
+              background-size: 100%;
+            }
+          }
+          a{
+            display: block;
+            @include changfang(100%,100%);
+          }
+        }
+      }
+      .jingXuanShiChang{
+        @include changfang(100%,7.91rem);
+        .title{
+          @include changfang(100%,1rem);
+          float: left;
+          background: #eee;
+          position: relative;
+          p{
+            @include changfang(2.3rem,1rem);
+            line-height: 1rem;
+            text-align: right;
+            color: #e24aa5;
+            @include center;
+            i{
+              @include changfang(0.66rem,0.5rem);
+              margin-top: 0.25rem;
+              float: left;
+              background: url("../images/20160806_154340_22.jpg") center center no-repeat;
+              background-size: 100%;
+            }
+          }
+          span{
+            display: block;
+            @include changfang(0.9rem,0.03rem);
+            background: #e24aa5;
+            @include shangxia;
+          }
+          .left{
+            left: 3rem;
+          }
+          .right{
+            right: 3rem;
+          }
+        }
+        li{
+          @include changfang(25%,3.74rem);
+          background: rebeccapurple;
+          float: left;
+          border-right: 0.02rem solid #eee;
+          box-sizing: border-box;
+          @for $i from 1 through 6{
+            &:nth-of-type(#{$i}){
+              background: url("../images/jingXuanShiChang#{$i}.jpg") no-repeat center center;
+              background-size: 100%;
+            }
+          }
+          a{
+            display: block;
+            @include changfang(100%,100%);
+          }
+        }
+        li:nth-of-type(5),li:nth-of-type(6){
+          @include changfang(50%,3.15rem);
+          box-sizing: border-box;
+          border-top: 0.02rem solid #eee;
+          float: left;
+        }
+      }
+      .aiShengHuo{
+        @include changfang(100%,5.05rem);
+        float: left;
+        .title{
+          @include changfang(100%,1rem);
+          float: left;
+          background: #eee;
+          position: relative;
+          p{
+            @include changfang(1.9rem,1rem);
+            line-height: 1rem;
+            text-align: right;
+            color: #17b7ff;
+            @include center;
+            i{
+              margin-top:0.25rem;
+              @include changfang(0.6rem,0.5rem);
+              float: left;
+              background: url("../images/20160806_165726_17.jpg") center center no-repeat;
+              background-size: 100%;
+            }
+          }
+          span{
+            display: block;
+            @include changfang(0.9rem,0.03rem);
+            background: #17b7ff;
+            @include shangxia;
+          }
+          .left{
+            left: 3.2rem;
+          }
+          .right{
+            right: 3.2rem;
+          }
+        }
+        li{
+          @include changfang(25%,4.05rem);
+          background: rebeccapurple;
+          float: left;
+          border-right: 0.02rem solid #eee;
+          box-sizing: border-box;
+          @for $i from 1 through 4{
+            &:nth-of-type(#{$i}){
+              background: url("../images/aiShengHuo#{$i}.jpg") no-repeat center center;
+              background-size: 100%;
+            }
+          }
+          a{
+            display: block;
+            @include changfang(100%,100%);
+          }
+        }
+      }
+      .chaoLiuKuWan{
+        @include changfang(100%,5.37rem);
+        .title{
+          @include changfang(100%,1rem);
+          float: left;
+          background: #eee;
+          position: relative;
+          p{
+            @include changfang(2.3rem,1rem);
+            line-height: 1rem;
+            text-align: right;
+            color: #4a84e2;
+            @include center;
+            i{
+              margin-top:0.25rem;
+              @include zhengfang(0.5rem);
+              float: left;
+              background: url("../images/20160806_182536_03.jpg") center center no-repeat;
+              background-size: 100%;
+            }
+          }
+          span{
+            display: block;
+            @include changfang(0.9rem,0.03rem);
+            background: #4a84e2;
+            @include shangxia;
+          }
+          .left{
+            left: 3rem;
+          }
+          .right{
+            right: 3rem;
+          }
+        }
+        li{
+          @include changfang(33.33333%,4.37rem);
+          background: rebeccapurple;
+          float: left;
+          border-right: 0.02rem solid #eee;
+          box-sizing: border-box;
+          @for $i from 1 through 3{
+            &:nth-of-type(#{$i}){
+              background: url("../images/chaoLiuKuWan#{$i}.jpg") no-repeat center center;
+              background-size: 100%;
+            }
+          }
+          a{
+            display: block;
+            @include changfang(100%,100%);
+          }
+        }
+      }
+      .pinPaiTeMai{
+        @include changfang(100%,3.73rem);
+        float: left;
+        .title{
+          @include changfang(100%,1rem);
+          float: left;
+          background: #eee;
+          position: relative;
+          p{
+            @include changfang(2.3rem,1rem);
+            line-height: 1rem;
+            text-align: right;
+            color: #ff8000;
+            @include center;
+            i{
+              margin-top:0.25rem;
+              @include zhengfang(0.5rem);
+              float: left;
+              background: url("../images/20160806_182536_15.jpg") center center no-repeat;
+              background-size: 100%;
+            }
+          }
+          span{
+            display: block;
+            @include changfang(0.9rem,0.03rem);
+            background: #ff8000;
+            @include shangxia;
+          }
+          .left{
+            left: 3rem;
+          }
+          .right{
+            right: 3rem;
+          }
+        }
+        li{
+          @include changfang(50%,3.17rem);
+          float: left;
+          border-right: 0.04rem solid #eee;
+          box-sizing: border-box;
+          @for $i from 1 through 2{
+            &:nth-of-type(#{$i}){
+              background: url("../images/pinPaiTeMai#{$i}.jpg") no-repeat center center;
+              background-size: 100%;
+            }
+          }
+          a{
+            display: block;
+            @include changfang(100%,100%);
+          }
+        }
+      }
+      .lunbo1-inner{
+        @include changfang(100%,2.68rem);
+        float: left;
+        margin-top:0.5rem;
+        position: relative;
+        li{
+          @include changfang(100%,100%);
+          float: left;
+          position:absolute;
+          left:0;
+          top:0;
+          @for $i from 1 through 3{
+            &:nth-of-type(#{$i}){
+              background: url("../images/lunbo1-inner#{$i}.jpg") no-repeat center center;
+              background-size: 100%;
+            }
+          }
+          a{
+            display: block;
+            @include changfang(100%,100%);
+          }
+        }
+      }
+      .pinPaiTeMai{
+        @include changfang(100%,3.73rem);
+        float: left;
+        .title{
+          @include changfang(100%,1rem);
+          float: left;
+          background: #eee;
+          position: relative;
+          p{
+            @include changfang(2.3rem,1rem);
+            line-height: 1rem;
+            text-align: right;
+            color: #ff8000;
+            @include center;
+            i{
+              margin-top:0.25rem;
+              @include zhengfang(0.5rem);
+              float: left;
+              background: url("../images/20160806_182536_15.jpg") center center no-repeat;
+              background-size: 100%;
+            }
+          }
+          span{
+            display: block;
+            @include changfang(0.9rem,0.03rem);
+            background: #ff8000;
+            @include shangxia;
+          }
+          .left{
+            left: 3rem;
+          }
+          .right{
+            right: 3rem;
+          }
+        }
+        li{
+          @include changfang(50%,3.17rem);
+          float: left;
+          border-right: 0.04rem solid #eee;
+          box-sizing: border-box;
+          @for $i from 1 through 2{
+            &:nth-of-type(#{$i}){
+              background: url("../images/pinPaiTeMai#{$i}.jpg") no-repeat center center;
+              background-size: 100%;
+            }
+          }
+          a{
+            display: block;
+            @include changfang(100%,100%);
+          }
+        }
+      }
+      .reMenHangYe{
+        @include changfang(100%,12.15rem);
+        float: left;
+        .title{
+          @include changfang(100%,1rem);
+          float: left;
+          background: #eee;
+          position: relative;
+          p{
+            @include changfang(2.3rem,1rem);
+            line-height: 1rem;
+            text-align: right;
+            color: #5e4ae2;
+            @include center;
+            i{
+              margin-top:0.25rem;
+              @include zhengfang(0.5rem);
+              float: left;
+              background: url("../images/20160807_125110_05.jpg") center center no-repeat;
+              background-size: 100%;
+            }
+          }
+          span{
+            display: block;
+            @include changfang(0.9rem,0.03rem);
+            background: #5e4ae2;
+            @include shangxia;
+          }
+          .left{
+            left: 3rem;
+          }
+          .right{
+            right: 3rem;
+          }
+        }
+        li{
+          @include changfang(25%,4.05rem);
+          float: left;
+          border-right: 0.02rem solid #eee;
+          border-bottom: 0.02rem solid #eee;
+          box-sizing: border-box;
+          @for $i from 3 through 10{
+            &:nth-of-type(#{$i}){
+              background: url("../images/reMenHangYe#{$i}.jpg") no-repeat center center;
+              background-size: 100%;
+            }
+          }
+          a{
+            display: block;
+            @include changfang(100%,100%);
+          }
+        }
+        li:nth-of-type(1){
+          @include changfang(50%,3rem);
+          float:left;
+          background: url("../images/reMenHangYe1.jpg") no-repeat center center;
+          background-size: 100%;
+        }
+        li:nth-of-type(2){
+          @include changfang(50%,3rem);
+          float:left;
+          background: url("../images/reMenHangYe2.jpg") no-repeat center center;
+          background-size: 100%;
+        }
+      }
+      .lunbo2-inner{
+        @include changfang(100%,2.68rem);
+        float: left;
+        position: relative;
+        li{
+          @include changfang(100%,100%);
+          float: left;
+          position:absolute;
+          left:0;
+          top:0;
+          @for $i from 1 through 2{
+            &:nth-of-type(#{$i}){
+              background: url("../images/lunbo2-inner#{$i}.jpg") no-repeat center center;
+              background-size: 100%;
+            }
+          }
+          a{
+            display: block;
+            @include changfang(100%,100%);
+          }
+        }
+      }
+      .pinPaiQiJian{
+        @include changfang(100%,10.37rem);
+        float: left;
+        .title{
+          @include changfang(100%,1rem);
+          float: left;
+          background: #eee;
+          position: relative;
+          p{
+            @include changfang(2.3rem,1rem);
+            line-height: 1rem;
+            text-align: right;
+            color: #2f2f2f;
+            @include center;
+            i{
+              margin-top:0.25rem;
+              @include zhengfang(0.5rem);
+              float: left;
+              background: url("../images/20160807_131654_05.jpg") center center no-repeat;
+              background-size: 100%;
+            }
+          }
+          span{
+            display: block;
+            @include changfang(0.9rem,0.03rem);
+            background: #2f2f2f;
+            @include shangxia;
+          }
+          .left{
+            left: 3rem;
+          }
+          .right{
+            right: 3rem;
+          }
+        }
+        li{
+          @include changfang(50%,50%);
+          float: left;
+          border-right: 0.09rem solid #eee;
+          border-bottom: 0.1rem solid #eee;
+          box-sizing: border-box;
+          @for $i from 1 through 4{
+            &:nth-of-type(#{$i}){
+              background: url("../images/pinPaiQiJian#{$i}.jpg") no-repeat center center;
+              background-size: 100%;
+            }
+          }
+          a{
+            display: block;
+            @include changfang(100%,100%);
+          }
+        }
+      }
+      .caiNiXiHuan{
+        height:auto;
+        width: 100%;
+        float: left;
+        margin-bottom: 1.5rem;
+        .title{
+          @include changfang(100%,1rem);
+          float: left;
+          background: #eee;
+          position: relative;
+          p{
+            @include changfang(2.3rem,1rem);
+            line-height: 1rem;
+            text-align: right;
+            color: #2f2f2f;
+            @include center;
+            i{
+              margin-top:0.25rem;
+              @include zhengfang(0.5rem);
+              float: left;
+              background: url("../images/20160806_114035_03.jpg") center center no-repeat;
+              background-size: 100%;
+            }
+          }
+          span{
+            display: block;
+            @include changfang(0.9rem,0.03rem);
+            background: #2f2f2f;
+            @include shangxia;
+          }
+          .left{
+            left: 3rem;
+          }
+          .right{
+            right: 3rem;
+          }
+        }
+        li{
+          @include changfang(50%,7.65rem);
+          float: left;
+          border-right: 0.02rem solid #eee;
+          border-bottom: 0.02rem solid #eee;
+          box-sizing: border-box;
+          @for $i from 1 through 52{
+            &:nth-of-type(#{$i}){
+              background: url("../images/caiNiXiHuan#{$i}.jpg") no-repeat center center;
+              background-size: 100%;
+            }
+          }
+          a{
+            display: block;
+            @include changfang(100%,100%);
+          }
+        }
+        li:last-child{
+          @include changfang(100%,2rem);
+          float: left;
+          background: #eee;
+          position: relative;
+          i{
+            display: block;
+            @include changfang(1.14rem,0.81rem);
+            @include center;
+            background: url("../images/20160807_230215_06.jpg") no-repeat center center;
+            background-size: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
