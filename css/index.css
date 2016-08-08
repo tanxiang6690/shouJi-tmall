@@ -1245,6 +1245,71 @@ body {
             display: block;
             width: 100%;
             height: 100%; }
+      .content .detail-content .floor .zhuTiShiChang {
+        width: 100%;
+        height: 5.05rem;
+        float: left; }
+        .content .detail-content .floor .zhuTiShiChang .title {
+          width: 100%;
+          height: 1rem;
+          float: left;
+          background: #eee;
+          position: relative; }
+          .content .detail-content .floor .zhuTiShiChang .title p {
+            width: 2.3rem;
+            height: 1rem;
+            line-height: 1rem;
+            text-align: right;
+            color: #2f2f2f;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto; }
+            .content .detail-content .floor .zhuTiShiChang .title p i {
+              margin-top: 0.25rem;
+              width: 0.5rem;
+              height: 0.5rem;
+              float: left;
+              background: url("../images/20160807_131654_05.jpg") center center no-repeat;
+              background-size: 100%; }
+          .content .detail-content .floor .zhuTiShiChang .title span {
+            display: block;
+            width: 0.9rem;
+            height: 0.03rem;
+            background: #2f2f2f;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto; }
+          .content .detail-content .floor .zhuTiShiChang .title .left {
+            left: 3rem; }
+          .content .detail-content .floor .zhuTiShiChang .title .right {
+            right: 3rem; }
+        .content .detail-content .floor .zhuTiShiChang li {
+          width: 25%;
+          height: 4.05rem;
+          float: left;
+          border-right: 0.09rem solid #eee;
+          border-bottom: 0.1rem solid #eee;
+          box-sizing: border-box; }
+          .content .detail-content .floor .zhuTiShiChang li:nth-of-type(1) {
+            background: url("../images/zhuTiShiChang1.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .zhuTiShiChang li:nth-of-type(2) {
+            background: url("../images/zhuTiShiChang2.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .zhuTiShiChang li:nth-of-type(3) {
+            background: url("../images/zhuTiShiChang3.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .zhuTiShiChang li:nth-of-type(4) {
+            background: url("../images/zhuTiShiChang4.jpg") no-repeat center center;
+            background-size: 100%; }
+          .content .detail-content .floor .zhuTiShiChang li a {
+            display: block;
+            width: 100%;
+            height: 100%; }
       .content .detail-content .floor .caiNiXiHuan {
         height: auto;
         width: 100%;
